@@ -1,0 +1,41 @@
+.item {
+    margin-left: 12PX;
+    margin-right: 12PX;
+    // background-color: DodgerBlue;
+    height: 50PX;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 0.5px rgba(0, 0, 0, 0.09);
+    &_title {
+        &_name {
+            font-size: 15PX;
+            font-family: PingFang SC, PingFang SC-Regular;
+            font-weight: 400;
+            color: #666666;
+        }
+        &_content {
+            font-size: 15PX;
+            font-family: PingFang SC, PingFang SC-Semibold;
+            font-weight: 600;
+            color: #000000;
+        }
+    }
+    &_more {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &_avator {
+            width: 34PX;
+            height: 34PX;
+            border-radius: 17PX;
+        }
+        &_arrow {
+            width: 12PX;
+            height: 12PX;
+            margin-left: 5PX;
+        }
+    }
+}

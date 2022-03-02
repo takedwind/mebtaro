@@ -1,0 +1,26 @@
+.header {
+    margin-left: 12PX;
+    margin-right: 12PX;
+    // background-color: DodgerBlue;
+    height: 44PX;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &_back {
+        width: 20PX;
+        height: 20PX;
+    }
+    &_title {
+        font-size: 19PX;
+        font-family: PingFang SC, PingFang SC-Semibold;
+        font-weight: 600;
+        color: #000000;
+    }
+    &_save {
+        font-size: 16PX;
+        font-family: PingFang SC, PingFang SC-Regular;
+        font-weight: 600;
+        color: #F75243;
+    }
+}
