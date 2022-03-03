@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "mebtaro",
-  "description": "this is a taro test demo!",
+  "projectname": "myApp",
+  "description": "呵呵Taro",
   "appid": "touristappid",
   "setting": {
     "urlCheck": true,

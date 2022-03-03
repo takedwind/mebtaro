@@ -1,6 +1,6 @@
 const config = {
-  projectName: 'mebtaro',
-  date: '2022-3-3',
+  projectName: 'myApp',
+  date: '2022-3-2',
   designWidth: 750,
   deviceRatio: {
     640: 2.34 / 2,
@@ -57,6 +57,26 @@ const config = {
           namingPattern: 'module', // 转换模式，取值为 global/module
           generateScopedName: '[name]__[local]___[hash:base64:5]'
         }
+      }
+    }
+  },
+  rn: {
+    appName: 'myApp',
+    output: {
+      ios: './ios/main.jsbundle',
+      iosAssetsDest: './ios',
+      android: './android/app/src/main/assets/index.android.bundle',
+      androidAssetsDest: './android/app/src/main/res',
+      // iosSourceMapUrl: '',
+      iosSourcemapOutput: './ios/main.map',
+      // iosSourcemapSourcesRoot: '',
+      // androidSourceMapUrl: '',
+      androidSourcemapOutput: './android/app/src/main/assets/index.android.map',
+      // androidSourcemapSourcesRoot: '',
+    },
+    postcss: {
+      cssModules: {
+        enable: false, // 默认为 false，如需使用 css modules 功能，则设为 true
       }
     }
   }

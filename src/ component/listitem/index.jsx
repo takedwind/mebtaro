@@ -2,6 +2,7 @@ import { Component } from 'react';
 import { View, Text, Image} from '@tarojs/components';
 import avatorimg from '../../images/avator.png'
 import moreimg from "../../images/more.png";
+import Taro from '@tarojs/taro';
 import './index.scss'
 
 export default class ListItem extends Component {
@@ -22,12 +23,14 @@ export default class ListItem extends Component {
 
     handleClick = (text) => {
         console.log(text)
+        Taro.showToast({ title: text })
+        
     }
   
     render () {
       const { title, subtitle, showavator } = this.props;
       return (
-        <View className='item' onClick={() => this.handleClick('Hello World')}>
+        <View className='item' onClick={() => this.handleClick(title)}>
           <View className='item_title'>
             <Text className='item_title_name'>{title}</Text>
             <Text className='item_title_content'>       {subtitle}</Text>
